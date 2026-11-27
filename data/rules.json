@@ -1,0 +1,1038 @@
+{
+  "races": [
+    {
+      "id": "human",
+      "name": "人類",
+      "stats": {
+        "STR": 10,
+        "AGI": 10,
+        "VIT": 10,
+        "INT": 10,
+        "PIE": 10,
+        "LUK": 10
+      },
+      "passive": {
+        "exp": 1.1,
+        "statusResist": 0.05
+      },
+      "desc": "較快取得經驗，略能抵抗各種異常。"
+    },
+    {
+      "id": "elf",
+      "name": "精靈",
+      "stats": {
+        "STR": 7,
+        "AGI": 12,
+        "VIT": 7,
+        "INT": 14,
+        "PIE": 11,
+        "LUK": 9
+      },
+      "passive": {
+        "sleepImmune": true,
+        "spellCrit": 5
+      },
+      "desc": "免疫睡眠，法術較容易造成重創。"
+    },
+    {
+      "id": "dwarf",
+      "name": "矮人",
+      "stats": {
+        "STR": 13,
+        "AGI": 7,
+        "VIT": 14,
+        "INT": 7,
+        "PIE": 11,
+        "LUK": 8
+      },
+      "passive": {
+        "poisonImmune": true,
+        "heavyThreshold": 0.1
+      },
+      "desc": "免疫中毒，較不易因重擊加深傷勢。"
+    },
+    {
+      "id": "gnome",
+      "name": "侏儒",
+      "stats": {
+        "STR": 7,
+        "AGI": 10,
+        "VIT": 8,
+        "INT": 14,
+        "PIE": 12,
+        "LUK": 9
+      },
+      "passive": {
+        "mdef": 1.15,
+        "identify": 0.15
+      },
+      "desc": "較能抵抗法術，也更善於鑑定。"
+    },
+    {
+      "id": "hobbit",
+      "name": "霍比特人",
+      "stats": {
+        "STR": 8,
+        "AGI": 14,
+        "VIT": 8,
+        "INT": 8,
+        "PIE": 7,
+        "LUK": 15
+      },
+      "passive": {
+        "trap": 0.2,
+        "retreat": 0.1
+      },
+      "desc": "善於察覺與解除陷阱，也懂得撤退。"
+    }
+  ],
+  "classes": [
+    {
+      "id": "fighter",
+      "name": "戰士",
+      "tier": 1,
+      "hpGrowth": 9,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "greatsword",
+        "polearm",
+        "mace",
+        "warhammer"
+      ],
+      "learnTable": {
+        "1": [
+          "sk_shield_bash"
+        ],
+        "2": [
+          "sk_guard"
+        ],
+        "4": [
+          "sk_cleave"
+        ]
+      },
+      "starter": "wp_rusty_sword",
+      "advancements": [
+        "samurai",
+        "lord"
+      ],
+      "base": null,
+      "passive": {}
+    },
+    {
+      "id": "rogue",
+      "name": "盜賊",
+      "tier": 1,
+      "hpGrowth": 6,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "shortbow",
+        "crossbow"
+      ],
+      "learnTable": {
+        "1": [
+          "sk_quick_cut"
+        ],
+        "2": [
+          "sk_feint"
+        ],
+        "4": [
+          "sk_viper_cut"
+        ]
+      },
+      "starter": "wp_bone_knife",
+      "advancements": [
+        "ninja",
+        "assassin"
+      ],
+      "base": null,
+      "passive": {}
+    },
+    {
+      "id": "cleric",
+      "name": "僧侶",
+      "tier": 1,
+      "hpGrowth": 7,
+      "allowedWeapons": [
+        "mace",
+        "warhammer",
+        "holy",
+        "staff"
+      ],
+      "learnTable": {
+        "1": [
+          "sp_mend"
+        ],
+        "2": [
+          "sp_smite"
+        ],
+        "4": [
+          "sp_remedy"
+        ],
+        "7": [
+          "sp_sanctuary"
+        ]
+      },
+      "starter": "wp_oak_mace",
+      "advancements": [
+        "paladin",
+        "bishop"
+      ],
+      "base": null,
+      "passive": {}
+    },
+    {
+      "id": "mage",
+      "name": "法師",
+      "tier": 1,
+      "hpGrowth": 4,
+      "allowedWeapons": [
+        "dagger",
+        "staff"
+      ],
+      "learnTable": {
+        "1": [
+          "sp_ember"
+        ],
+        "2": [
+          "sp_frost"
+        ],
+        "4": [
+          "sp_cinder"
+        ],
+        "7": [
+          "sp_drowse"
+        ]
+      },
+      "starter": "wp_ash_staff",
+      "advancements": [
+        "archmage",
+        "warlock"
+      ],
+      "base": null,
+      "passive": {}
+    },
+    {
+      "id": "ranger",
+      "name": "遊俠",
+      "tier": 1,
+      "hpGrowth": 6,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "shortbow",
+        "longbow",
+        "crossbow"
+      ],
+      "learnTable": {
+        "1": [
+          "sk_pin"
+        ],
+        "2": [
+          "sk_mark"
+        ],
+        "4": [
+          "sk_volley"
+        ]
+      },
+      "starter": "wp_hunter_bow",
+      "advancements": [
+        "marksman",
+        "beastmaster"
+      ],
+      "base": null,
+      "passive": {}
+    },
+    {
+      "id": "samurai",
+      "name": "武士",
+      "tier": 2,
+      "hpGrowth": 9,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "greatsword",
+        "polearm",
+        "mace",
+        "warhammer"
+      ],
+      "learnTable": {
+        "10": [
+          "sk_iai"
+        ],
+        "13": [
+          "sk_riposte"
+        ],
+        "16": [
+          "sk_sunder"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "fighter",
+      "passive": {}
+    },
+    {
+      "id": "lord",
+      "name": "君主",
+      "tier": 2,
+      "hpGrowth": 9,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "greatsword",
+        "polearm",
+        "mace",
+        "warhammer",
+        "holy"
+      ],
+      "learnTable": {
+        "10": [
+          "sp_rescue"
+        ],
+        "13": [
+          "sk_bastion"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "fighter",
+      "passive": {
+        "aura": 0.1
+      }
+    },
+    {
+      "id": "ninja",
+      "name": "忍者",
+      "tier": 2,
+      "hpGrowth": 6,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "shortbow",
+        "crossbow"
+      ],
+      "learnTable": {
+        "10": [
+          "sk_execution"
+        ],
+        "13": [
+          "sk_shadow"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "rogue",
+      "passive": {
+        "unarmoredEva": 22
+      }
+    },
+    {
+      "id": "assassin",
+      "name": "暗殺者",
+      "tier": 2,
+      "hpGrowth": 6,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "shortbow",
+        "crossbow"
+      ],
+      "learnTable": {
+        "10": [
+          "sk_envenom"
+        ],
+        "13": [
+          "sk_sever"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "rogue",
+      "passive": {}
+    },
+    {
+      "id": "paladin",
+      "name": "聖武士",
+      "tier": 2,
+      "hpGrowth": 7,
+      "allowedWeapons": [
+        "mace",
+        "warhammer",
+        "holy",
+        "staff",
+        "sword"
+      ],
+      "learnTable": {
+        "10": [
+          "sk_hammer"
+        ],
+        "13": [
+          "sp_aegis"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "cleric",
+      "passive": {}
+    },
+    {
+      "id": "bishop",
+      "name": "主教",
+      "tier": 2,
+      "hpGrowth": 7,
+      "allowedWeapons": [
+        "mace",
+        "warhammer",
+        "holy",
+        "staff"
+      ],
+      "learnTable": {
+        "10": [
+          "sp_cinder",
+          "sp_remedy"
+        ],
+        "13": [
+          "sp_judgment"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "cleric",
+      "passive": {
+        "freeIdentify": true
+      }
+    },
+    {
+      "id": "archmage",
+      "name": "大魔導士",
+      "tier": 2,
+      "hpGrowth": 4,
+      "allowedWeapons": [
+        "dagger",
+        "staff"
+      ],
+      "learnTable": {
+        "10": [
+          "sp_nova"
+        ],
+        "13": [
+          "sp_blizzard"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "mage",
+      "passive": {
+        "slotOnKill": true
+      }
+    },
+    {
+      "id": "warlock",
+      "name": "咒術師",
+      "tier": 2,
+      "hpGrowth": 4,
+      "allowedWeapons": [
+        "dagger",
+        "staff"
+      ],
+      "learnTable": {
+        "10": [
+          "sp_molder"
+        ],
+        "13": [
+          "sp_hush"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "mage",
+      "passive": {}
+    },
+    {
+      "id": "marksman",
+      "name": "神射手",
+      "tier": 2,
+      "hpGrowth": 6,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "shortbow",
+        "longbow",
+        "crossbow"
+      ],
+      "learnTable": {
+        "10": [
+          "sk_snipe"
+        ],
+        "13": [
+          "sk_stopshot"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "ranger",
+      "passive": {}
+    },
+    {
+      "id": "beastmaster",
+      "name": "馴獸遊俠",
+      "tier": 2,
+      "hpGrowth": 6,
+      "allowedWeapons": [
+        "dagger",
+        "sword",
+        "shortbow",
+        "longbow",
+        "crossbow"
+      ],
+      "learnTable": {
+        "10": [
+          "sk_expose"
+        ],
+        "13": [
+          "sk_howl"
+        ]
+      },
+      "starter": null,
+      "advancements": [],
+      "base": "ranger",
+      "passive": {
+        "scout": true
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "sk_shield_bash",
+      "name": "盾擊",
+      "desc": "用盾面撞向前排，打斷蓄力並易使目標暈眩。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 0.9,
+      "range": "short",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "stunChance": 0.85,
+      "interrupt": true,
+      "requires": "shield"
+    },
+    {
+      "id": "sk_guard",
+      "name": "護身",
+      "desc": "收緊防線，保護自己與身後的同伴。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1,
+      "range": "short",
+      "target": "party",
+      "cooldown": 2,
+      "effect": "guard"
+    },
+    {
+      "id": "sk_cleave",
+      "name": "橫掃",
+      "desc": "揮出橫斬，擊中敵方前列。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 0.88,
+      "range": "medium",
+      "target": "front_enemy",
+      "cooldown": 2
+    },
+    {
+      "id": "sk_quick_cut",
+      "name": "割隙",
+      "desc": "趁敵人失去平衡切開皮甲。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.4,
+      "range": "short",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "armorPen": 0.25
+    },
+    {
+      "id": "sk_feint",
+      "name": "虛晃",
+      "desc": "騙開兵刃後刺向對方的手。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.02,
+      "range": "medium",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "status": "blind",
+      "chance": 0.68
+    },
+    {
+      "id": "sk_viper_cut",
+      "name": "腹蛇刺",
+      "desc": "將毒刃送入護具接縫。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.2,
+      "range": "short",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "status": "poison",
+      "chance": 0.9
+    },
+    {
+      "id": "sk_pin",
+      "name": "釘射",
+      "desc": "瞄準支點射擊，令蓄力落空。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 0.93,
+      "range": "long",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "interrupt": true,
+      "requires": "bow"
+    },
+    {
+      "id": "sk_mark",
+      "name": "獵痕",
+      "desc": "以箭痕標出護甲縫隙。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.08,
+      "range": "long",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "status": "armor_break",
+      "chance": 0.75,
+      "requires": "bow"
+    },
+    {
+      "id": "sk_volley",
+      "name": "散箭",
+      "desc": "將箭射向敵方前列。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 0.82,
+      "range": "long",
+      "target": "front_enemy",
+      "cooldown": 2,
+      "requires": "bow"
+    },
+    {
+      "id": "sk_iai",
+      "name": "居合",
+      "desc": "拔劍只在一息，容易擊中要害。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.55,
+      "range": "short",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "crit": 34
+    },
+    {
+      "id": "sk_riposte",
+      "name": "返刃",
+      "desc": "守住破綻，反擊逼近的敵人。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1,
+      "range": "short",
+      "target": "self",
+      "cooldown": 2,
+      "effect": "riposte"
+    },
+    {
+      "id": "sk_sunder",
+      "name": "斷甲",
+      "desc": "以沉重一擊撕開護甲。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.35,
+      "range": "medium",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "armorPen": 0.45,
+      "status": "armor_break"
+    },
+    {
+      "id": "sk_bastion",
+      "name": "鐵壁",
+      "desc": "全隊以你為支點舉起兵刃。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1,
+      "range": "short",
+      "target": "party",
+      "cooldown": 2,
+      "effect": "guard"
+    },
+    {
+      "id": "sk_execution",
+      "name": "抹喉",
+      "desc": "對氣力將盡的敵人落下刃口。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.35,
+      "range": "short",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "execute": true
+    },
+    {
+      "id": "sk_shadow",
+      "name": "藏影",
+      "desc": "消失在敵人的視線之外。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1,
+      "range": "short",
+      "target": "self",
+      "cooldown": 2,
+      "effect": "evade"
+    },
+    {
+      "id": "sk_envenom",
+      "name": "塗毒",
+      "desc": "以毒刃留下遲遲不癒的傷口。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.22,
+      "range": "short",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "status": "poison"
+    },
+    {
+      "id": "sk_sever",
+      "name": "斷筋",
+      "desc": "打斷蓄力，讓敵人失去支撐。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.12,
+      "range": "medium",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "status": "stun",
+      "interrupt": true,
+      "effect": "sealArm"
+    },
+    {
+      "id": "sk_hammer",
+      "name": "鎮鐘",
+      "desc": "以鈍器震暈前排的敵人。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.25,
+      "range": "short",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "status": "stun",
+      "requires": "blunt"
+    },
+    {
+      "id": "sk_snipe",
+      "name": "穿列",
+      "desc": "隔著敵陣瞄準遠處的要害。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.75,
+      "range": "long",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "armorPen": 0.3,
+      "requires": "bow"
+    },
+    {
+      "id": "sk_stopshot",
+      "name": "止鼓",
+      "desc": "一箭摧斷蓄力的支點。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 1.4,
+      "range": "long",
+      "target": "single_enemy",
+      "cooldown": 2,
+      "interrupt": true,
+      "status": "stun",
+      "requires": "bow"
+    },
+    {
+      "id": "sk_expose",
+      "name": "尋罅",
+      "desc": "指出敵群最脆弱的部位。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 0.85,
+      "range": "long",
+      "target": "all_enemy",
+      "cooldown": 2,
+      "status": "armor_break",
+      "effect": "expose"
+    },
+    {
+      "id": "sk_howl",
+      "name": "伴獸低鳴",
+      "desc": "猛獸的低鳴逼得敵人退縮。",
+      "type": "active",
+      "costSp": 0,
+      "mult": 0.75,
+      "range": "long",
+      "target": "all_enemy",
+      "cooldown": 2,
+      "status": "fear"
+    }
+  ],
+  "spells": [
+    {
+      "id": "sp_mend",
+      "name": "癒合",
+      "desc": "止住出血，將同伴從瀕死中喚回。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 1,
+      "mult": 1.45,
+      "range": "long",
+      "target": "single_ally",
+      "element": "holy",
+      "heal": true
+    },
+    {
+      "id": "sp_smite",
+      "name": "白燼",
+      "desc": "灰白的火照入敵人骨縫。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 1,
+      "mult": 1.15,
+      "range": "long",
+      "target": "single_enemy",
+      "element": "holy"
+    },
+    {
+      "id": "sp_remedy",
+      "name": "清創",
+      "desc": "縫合傷口，解除輕傷。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 2,
+      "mult": 1.55,
+      "range": "long",
+      "target": "single_ally",
+      "element": "holy",
+      "heal": true,
+      "lightCure": true
+    },
+    {
+      "id": "sp_sanctuary",
+      "name": "誓光",
+      "desc": "以微弱的白光照顧整支隊伍。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 3,
+      "mult": 1.25,
+      "range": "long",
+      "target": "party",
+      "element": "holy",
+      "heal": true
+    },
+    {
+      "id": "sp_ember",
+      "name": "炭矢",
+      "desc": "將一撮灼熱的炭火迸向敵人。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 1,
+      "mult": 1.48,
+      "range": "long",
+      "target": "single_enemy",
+      "element": "fire"
+    },
+    {
+      "id": "sp_frost",
+      "name": "凍刺",
+      "desc": "凝出冰棘，刺穿敵人的護具。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 1,
+      "mult": 1.32,
+      "range": "long",
+      "target": "single_enemy",
+      "element": "cold"
+    },
+    {
+      "id": "sp_cinder",
+      "name": "火幕",
+      "desc": "灰燼燒開，火焰掠過敵陣。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 2,
+      "mult": 1.05,
+      "range": "long",
+      "target": "all_enemy",
+      "element": "fire"
+    },
+    {
+      "id": "sp_drowse",
+      "name": "沉夢",
+      "desc": "低語讓敵人闔眼。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 3,
+      "mult": 0.35,
+      "range": "long",
+      "target": "all_enemy",
+      "element": "cold",
+      "status": "sleep",
+      "chance": 0.7
+    },
+    {
+      "id": "sp_rescue",
+      "name": "回息",
+      "desc": "喚回行將斷絕的氣息。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 1,
+      "mult": 2.3,
+      "range": "long",
+      "target": "single_ally",
+      "element": "holy",
+      "heal": true
+    },
+    {
+      "id": "sp_aegis",
+      "name": "聖盾",
+      "desc": "擋在同伴面前，撐過一輪攻擊。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 2,
+      "mult": 1,
+      "range": "long",
+      "target": "party",
+      "element": "holy",
+      "effect": "guard"
+    },
+    {
+      "id": "sp_judgment",
+      "name": "審斷",
+      "desc": "聖光越過前列，打中整片陰影。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 3,
+      "mult": 1.5,
+      "range": "long",
+      "target": "all_enemy",
+      "element": "holy"
+    },
+    {
+      "id": "sp_nova",
+      "name": "赤裂",
+      "desc": "火舌從地縫抬起，燒穿敵陣。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 3,
+      "mult": 2.05,
+      "range": "long",
+      "target": "all_enemy",
+      "element": "fire"
+    },
+    {
+      "id": "sp_blizzard",
+      "name": "寒白",
+      "desc": "凜風吹過，寒霜攀上兵刃。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 3,
+      "mult": 1.8,
+      "range": "long",
+      "target": "all_enemy",
+      "element": "cold",
+      "status": "stun",
+      "chance": 0.5
+    },
+    {
+      "id": "sp_molder",
+      "name": "朽甲",
+      "desc": "讓敵陣的護甲與力氣同時衰敗。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 2,
+      "mult": 0.82,
+      "range": "long",
+      "target": "all_enemy",
+      "element": "poison",
+      "status": "armor_break",
+      "effect": "weaken"
+    },
+    {
+      "id": "sp_hush",
+      "name": "噤聲",
+      "desc": "把咒語堵在施術者口中。",
+      "type": "spell",
+      "costSp": 1,
+      "ring": 3,
+      "mult": 0.8,
+      "range": "long",
+      "target": "all_enemy",
+      "element": "cold",
+      "status": "silence"
+    }
+  ],
+  "statusEffects": [
+    {
+      "id": "poison",
+      "name": "中毒",
+      "duration": 3
+    },
+    {
+      "id": "bleed",
+      "name": "流血",
+      "duration": 3
+    },
+    {
+      "id": "stun",
+      "name": "暈眩",
+      "duration": 1
+    },
+    {
+      "id": "sleep",
+      "name": "睡眠",
+      "duration": 2
+    },
+    {
+      "id": "silence",
+      "name": "沉默",
+      "duration": 2
+    },
+    {
+      "id": "blind",
+      "name": "致盲",
+      "duration": 2
+    },
+    {
+      "id": "armor_break",
+      "name": "破甲",
+      "duration": 3
+    },
+    {
+      "id": "fear",
+      "name": "恐懼",
+      "duration": 2
+    }
+  ],
+  "curses": [
+    {
+      "id": "bound",
+      "name": "縛骨",
+      "desc": "穿戴後無法卸下，神殿可解除。"
+    },
+    {
+      "id": "hunger",
+      "name": "飢刃",
+      "desc": "穿戴後無法卸下，且削弱體魄。",
+      "modifiers": {
+        "VIT": -2
+      }
+    }
+  ]
+}

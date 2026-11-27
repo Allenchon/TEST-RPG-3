@@ -1,0 +1,449 @@
+{
+  "floors": [
+    {
+      "floor": 1,
+      "zone": 1,
+      "eco": "goblin",
+      "name": "哥布林巢穴",
+      "targetSteps": [
+        45,
+        60
+      ],
+      "monsterPool": [
+        "mon_goblin_peon",
+        "mon_goblin_archer",
+        "mon_goblin_shaman",
+        "mon_rust_guard",
+        "mon_cave_rat",
+        "mon_limp_overseer"
+      ],
+      "elitePool": [
+        "eli_bone_flute",
+        "eli_cave_stalker",
+        "eli_torch_thief",
+        "eli_iron_jaw"
+      ],
+      "bossId": "boss_1_grik",
+      "path": [
+        [
+          2,
+          20
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          9,
+          20
+        ],
+        [
+          15,
+          20
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "features": {
+        "camp": [
+          8,
+          8
+        ],
+        "elite": [
+          9,
+          17
+        ],
+        "hearth": [
+          4,
+          15
+        ],
+        "inscription": [
+          7,
+          15
+        ],
+        "secret": [
+          10,
+          9
+        ],
+        "trap": [
+          14,
+          20
+        ],
+        "stairs": [
+          13,
+          8
+        ],
+        "shortcut": [
+          12,
+          8
+        ]
+      },
+      "hiddenBossId": "hb_1_fire_child",
+      "triggerRelicId": "rel_charred_bowl"
+    },
+    {
+      "floor": 2,
+      "zone": 1,
+      "eco": "orc",
+      "name": "獸人營寨",
+      "targetSteps": [
+        45,
+        60
+      ],
+      "monsterPool": [
+        "mon_orc_raider",
+        "mon_orc_pikeman",
+        "mon_warg",
+        "mon_orc_drummer",
+        "mon_orc_hexer",
+        "mon_orc_iron"
+      ],
+      "elitePool": [
+        "eli_camp_reaver",
+        "eli_bone_brander",
+        "eli_orc_warden",
+        "eli_gray_fangs"
+      ],
+      "bossId": "boss_2_mogrash",
+      "path": [
+        [
+          3,
+          21
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          11,
+          21
+        ],
+        [
+          18,
+          21
+        ],
+        [
+          18,
+          14
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          16,
+          8
+        ]
+      ],
+      "features": {
+        "camp": [
+          12,
+          8
+        ],
+        "elite": [
+          11,
+          18
+        ],
+        "inscription": [
+          9,
+          16
+        ],
+        "shortcut": [
+          16,
+          8
+        ],
+        "secret": [
+          13,
+          9
+        ],
+        "trap": [
+          17,
+          21
+        ],
+        "rubble": [
+          16,
+          9
+        ]
+      },
+      "secretRelicId": "rel_charred_bowl"
+    }
+  ],
+  "zones": [
+    {
+      "id": 1,
+      "name": "北境地窟",
+      "floors": [
+        1,
+        2
+      ],
+      "supplyLimit": 16,
+      "magicStock": [
+        "wp_cinder_staff",
+        "ar_watch_coat"
+      ]
+    }
+  ],
+  "defaultParty": [
+    {
+      "name": "雷恩",
+      "race": "human",
+      "classId": "fighter",
+      "alignment": "neutral",
+      "slot": 0,
+      "equipment": {
+        "body": "ar_rag_jerkin",
+        "offhand": "ar_wood_shield"
+      }
+    },
+    {
+      "name": "凱爾",
+      "race": "hobbit",
+      "classId": "rogue",
+      "alignment": "neutral",
+      "slot": 1,
+      "equipment": {
+        "body": "ar_rag_jerkin"
+      }
+    },
+    {
+      "name": "米拉",
+      "race": "dwarf",
+      "classId": "cleric",
+      "alignment": "good",
+      "slot": 2,
+      "equipment": {
+        "body": "ar_rag_jerkin"
+      }
+    },
+    {
+      "name": "艾琳",
+      "race": "elf",
+      "classId": "mage",
+      "alignment": "good",
+      "slot": 3,
+      "equipment": {
+        "body": "ar_quilt"
+      }
+    },
+    {
+      "name": "羅賓",
+      "race": "gnome",
+      "classId": "ranger",
+      "alignment": "neutral",
+      "slot": 4,
+      "equipment": {
+        "body": "ar_quilt"
+      }
+    }
+  ],
+  "rumors": [
+    {
+      "id": "grik",
+      "text": "昨夜爬回來的傷兵說，瘸腿哥布林舉斧前會把斷腿抵住石縫。趁那時打斷牠。"
+    },
+    {
+      "id": "orc",
+      "text": "營寨的鼓一響，連守門的野狗也不肯讓路。那張鐵臉原先不屬於斷牙。"
+    },
+    {
+      "id": "hearth",
+      "text": "熄了的火塘旁有個孩子。你若聽見碗碰上石板的聲響，別急著添柴。"
+    },
+    {
+      "id": "wall",
+      "text": "營寨營火東邊的石壁有個缺口。有人在那裡藏了一件不值金幣的東西。"
+    }
+  ],
+  "inscriptions": [
+    {
+      "id": "wall_1",
+      "floor": 1,
+      "text": "營火旁的石壁有一塊是空的。別從小孩手裡拿走木器，那不是給活人用的。"
+    },
+    {
+      "id": "wall_2",
+      "floor": 2,
+      "text": "守鼓人藏起一只小碗。從營火往東，摸一摸朝南那塊磚。"
+    }
+  ],
+  "fireStory": [
+    {
+      "floor": 1,
+      "lines": [
+        "火堆劈啪作響，濕靴終於冒出一絲熱氣。",
+        "灰裡埋著一截木柄，握過的地方很光。"
+      ]
+    },
+    {
+      "floor": 2,
+      "lines": [
+        "火光在鉚釘上走了一圈。",
+        "營牆另一側沒有回話，只有鐵片碰石的聲響。"
+      ]
+    }
+  ],
+  "commonSense": [
+    {
+      "id": "torch",
+      "text": "火把將熄時先找退路。摸黑時連熟悉的刀也容易劈偏。"
+    },
+    {
+      "id": "camp",
+      "text": "紮營能補回氣力與法術。石道上的腳步聲也會向火靠攏。"
+    },
+    {
+      "id": "poise",
+      "text": "首領舉起兵刃時，先打鬆牠的架勢，再想著取命。"
+    },
+    {
+      "id": "scar",
+      "text": "神殿收得起金幣，卻縫不回死過一回的身體。"
+    },
+    {
+      "id": "stairs",
+      "text": "單向門從深處打開。記住石板上的出口記號。"
+    },
+    {
+      "id": "injury",
+      "text": "小傷能在營火旁養好。骨頭斷了就去找神殿。"
+    },
+    {
+      "id": "relic",
+      "text": "古怪的遺物別拿去賣。它可能會認得回去的路。"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "hearth",
+      "floor": 1,
+      "name": "熄滅的火塘",
+      "desc": "灰燼上有一對小小的膝印。"
+    },
+    {
+      "id": "secret",
+      "floor": 2,
+      "name": "背鼓藏室",
+      "desc": "石縫裡是一只被煙燻黑的木碗。"
+    }
+  ],
+  "codex": [
+    {
+      "id": "mon_goblin_peon",
+      "text": "滿手石粉的苦工，把斷鎬磨成了長刃。"
+    },
+    {
+      "id": "mon_goblin_archer",
+      "text": "弓弦用獸筋反覆搓成，箭上沾著灰。"
+    },
+    {
+      "id": "mon_goblin_shaman",
+      "text": "在灰燼中撥弄指骨，用斷續呼聲喚起冷火。"
+    },
+    {
+      "id": "mon_rust_guard",
+      "text": "鏽片間還留著舊隊徽，頭盔裡的眼睛從未闔上。"
+    },
+    {
+      "id": "mon_cave_rat",
+      "text": "齧齒一刻也沒停，牠在石板上留下細細的白痕。"
+    },
+    {
+      "id": "mon_limp_overseer",
+      "text": "鐵扣繫著瘸腿，牠會把停下的苦工拖進石縫。"
+    },
+    {
+      "id": "mon_orc_raider",
+      "text": "腰帶上夾著多把空鞘，從不替死人取回武器。"
+    },
+    {
+      "id": "mon_orc_pikeman",
+      "text": "把門閂削尖後當槍用，仍守著早已倒下的門。"
+    },
+    {
+      "id": "mon_warg",
+      "text": "齒間的碎骨比木柴還乾，靠近時會喀喀響。"
+    },
+    {
+      "id": "mon_orc_drummer",
+      "text": "鼓背藏著乾涸的掌印，擊鼓時只用左手。"
+    },
+    {
+      "id": "mon_orc_hexer",
+      "text": "胸前烙著火紋，舊疤在石牆映出半圈紅光。"
+    },
+    {
+      "id": "mon_orc_iron",
+      "text": "整張鐵皮從肩掛到腰，牽動時像厚重的門。"
+    },
+    {
+      "id": "eli_bone_flute",
+      "text": "骨笛的孔被磨得發亮，吹出的聲音像是有人屏息。"
+    },
+    {
+      "id": "eli_cave_stalker",
+      "text": "藏身在鐘乳石後，總先聽人的腳步再出手。"
+    },
+    {
+      "id": "eli_torch_thief",
+      "text": "一手提破燈，一手只需伸向獵物身後的火把。"
+    },
+    {
+      "id": "eli_iron_jaw",
+      "text": "鐵片箍住殘下巴，呼吸時鐵碰著牙。"
+    },
+    {
+      "id": "eli_camp_reaver",
+      "text": "從帳篷後丟出舊盔，自己早從另一側繞來。"
+    },
+    {
+      "id": "eli_bone_brander",
+      "text": "用紅炭烙下指印，死者的骨頭也要留下記號。"
+    },
+    {
+      "id": "eli_orc_warden",
+      "text": "帶甲睡在鐵門邊，連斷掉的門軸也穿在身上。"
+    },
+    {
+      "id": "eli_gray_fangs",
+      "text": "脖上鬆垂著斷鍊，身後的洞口堆了幾副腳骨。"
+    },
+    {
+      "id": "boss_1_grik",
+      "text": "曾是挑夫，斷腿後被棄在巢穴。木匙是當時唯一分到的餐具。"
+    },
+    {
+      "id": "boss_2_mogrash",
+      "text": "他咬死前任首領，把對方的護心鐵板釘在臉上，蓋住潰傷。"
+    },
+    {
+      "id": "hb_1_fire_child",
+      "text": "火熄之後仍抱膝等待。他伸手拿的，始終只是那只小碗。"
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "weapons": [
+    {
+      "id": "wp_rusty_sword",
+      "name": "生鏽短劍",
+      "category": "sword",
+      "range": "short",
+      "mainStat": "STR",
+      "atk": 6,
+      "acc": 2,
+      "price": 80,
+      "tier": 1,
+      "desc": "刃口有缺口的舊鐵劍，勉強能割開皮甲。"
+    },
+    {
+      "id": "wp_bone_knife",
+      "name": "磨骨短刃",
+      "category": "dagger",
+      "range": "short",
+      "mainStat": "AGI",
+      "atk": 5,
+      "acc": 4,
+      "price": 70,
+      "tier": 1,
+      "desc": "薄刃藏在袖口，貼身才好使。"
+    },
+    {
+      "id": "wp_oak_mace",
+      "name": "橡木釘鎚",
+      "category": "mace",
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 6,
+      "acc": 0,
+      "price": 80,
+      "tier": 1,
+      "desc": "舊釘穿入橡木，鎚柄留著手汗。",
+      "focus": 5
+    },
+    {
+      "id": "wp_ash_staff",
+      "name": "白蠟木杖",
+      "category": "staff",
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 4,
+      "acc": 0,
+      "price": 75,
+      "tier": 1,
+      "desc": "炭灰填過杖端的裂痕。",
+      "focus": 8
+    },
+    {
+      "id": "wp_hunter_bow",
+      "name": "獵人的短弓",
+      "category": "shortbow",
+      "range": "long",
+      "mainStat": "AGI",
+      "atk": 6,
+      "acc": 3,
+      "price": 85,
+      "tier": 1,
+      "desc": "拉弦時有枝條將折的聲音。"
+    },
+    {
+      "id": "wp_quarry_sword",
+      "name": "採石場闊劍",
+      "category": "greatsword",
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 15,
+      "acc": -3,
+      "price": 280,
+      "tier": 2,
+      "desc": "砍過岩塊的闊刃，需要雙手握住。",
+      "hands": 2
+    },
+    {
+      "id": "wp_pike",
+      "name": "長柄叉槍",
+      "category": "polearm",
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 10,
+      "acc": 2,
+      "price": 175,
+      "tier": 2,
+      "desc": "長柄穿過前列的空隙。",
+      "hands": 2
+    },
+    {
+      "id": "wp_forge_hammer",
+      "name": "爐心戰鎚",
+      "category": "warhammer",
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 16,
+      "acc": -4,
+      "price": 300,
+      "tier": 2,
+      "desc": "鐵砧留下的麻點覆滿鎚頭。",
+      "hands": 2
+    },
+    {
+      "id": "wp_yew_bow",
+      "name": "紫杉長弓",
+      "category": "longbow",
+      "range": "long",
+      "mainStat": "AGI",
+      "atk": 13,
+      "acc": 4,
+      "price": 330,
+      "tier": 2,
+      "desc": "矢從長弓離弦，能越過前列。",
+      "hands": 2
+    },
+    {
+      "id": "wp_road_crossbow",
+      "name": "山路弩",
+      "category": "crossbow",
+      "range": "long",
+      "mainStat": "AGI",
+      "atk": 13,
+      "acc": 5,
+      "price": 365,
+      "tier": 2,
+      "desc": "沉弦搭在木槽裡，擊發聲短促。",
+      "hands": 2
+    },
+    {
+      "id": "wp_votive",
+      "name": "裂銀聖徽",
+      "category": "holy",
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 6,
+      "acc": 1,
+      "price": 390,
+      "tier": 2,
+      "desc": "貼著手心時仍帶一點餘溫。",
+      "focus": 11
+    },
+    {
+      "id": "wp_cinder_staff",
+      "name": "燼心杖",
+      "category": "staff",
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 8,
+      "acc": 3,
+      "price": 940,
+      "tier": 3,
+      "desc": "木芯冒出微光，術式沿著裂口聚攏。",
+      "focus": 16,
+      "affixes": [
+        "focus"
+      ]
+    },
+    {
+      "id": "wp_thirst_knife",
+      "name": "渴骨",
+      "category": "dagger",
+      "range": "short",
+      "mainStat": "AGI",
+      "atk": 17,
+      "acc": 7,
+      "price": 700,
+      "tier": 5,
+      "desc": "刃根隱約起伏，彷彿仍在呼吸。",
+      "curse": "hunger",
+      "affixes": [
+        "keen"
+      ]
+    }
+  ],
+  "armors": [
+    {
+      "id": "ar_wool_cap",
+      "name": "羊毛兜帽",
+      "slot": "head",
+      "mdef": 1,
+      "weight": 0,
+      "price": 50,
+      "tier": 1,
+      "desc": "薄羊毛護住耳朵與額頭。",
+      "def": 1
+    },
+    {
+      "id": "ar_rag_jerkin",
+      "name": "舊皮襖",
+      "slot": "body",
+      "mdef": 0,
+      "weight": 1,
+      "price": 80,
+      "tier": 1,
+      "desc": "補了幾次的皮襖仍能擋些風。",
+      "def": 3
+    },
+    {
+      "id": "ar_quilt",
+      "name": "絎縫短衣",
+      "slot": "body",
+      "mdef": 1,
+      "weight": 0,
+      "price": 65,
+      "tier": 1,
+      "desc": "棉絮從磨薄的袖口露出來。",
+      "def": 2
+    },
+    {
+      "id": "ar_chain",
+      "name": "鉚接鎖甲",
+      "slot": "body",
+      "mdef": 1,
+      "weight": 4,
+      "price": 340,
+      "tier": 2,
+      "desc": "鐵環一枚枚鉚合，轉身時輕響。",
+      "def": 9
+    },
+    {
+      "id": "ar_gloves",
+      "name": "打補丁的皮手套",
+      "slot": "hands",
+      "mdef": 0,
+      "weight": 0,
+      "price": 55,
+      "tier": 1,
+      "desc": "掌心補過，仍能攥緊兵刃。",
+      "def": 1
+    },
+    {
+      "id": "ar_boots",
+      "name": "石路短靴",
+      "slot": "feet",
+      "mdef": 0,
+      "weight": 0,
+      "price": 60,
+      "tier": 1,
+      "desc": "硬底能咬住坑窪的石階。",
+      "def": 1
+    },
+    {
+      "id": "ar_wood_shield",
+      "name": "木盾",
+      "slot": "offhand",
+      "mdef": 0,
+      "weight": 1,
+      "price": 95,
+      "tier": 1,
+      "desc": "鐵釘仍扣著開裂的盾面。",
+      "shield": true,
+      "def": 3
+    },
+    {
+      "id": "ar_iron_shield",
+      "name": "鐵邊圓盾",
+      "slot": "offhand",
+      "mdef": 0,
+      "weight": 2,
+      "price": 245,
+      "tier": 2,
+      "desc": "盾邊沉重，能把兵刃推開。",
+      "shield": true,
+      "affixes": [
+        "thick"
+      ],
+      "def": 6
+    },
+    {
+      "id": "ar_bead",
+      "name": "靜心木珠",
+      "slot": "neck",
+      "mdef": 3,
+      "weight": 0,
+      "price": 110,
+      "tier": 1,
+      "desc": "臨行前有人替它打了一個結。",
+      "def": 0
+    },
+    {
+      "id": "ar_tin_ring",
+      "name": "錫戒",
+      "slot": "ring",
+      "mdef": 1,
+      "weight": 0,
+      "price": 95,
+      "tier": 1,
+      "desc": "戒圈內側磨得很光。",
+      "def": 0
+    },
+    {
+      "id": "ar_watch_coat",
+      "name": "守夜者皮衣",
+      "slot": "body",
+      "mdef": 5,
+      "weight": 2,
+      "price": 880,
+      "tier": 3,
+      "desc": "浸過油的厚皮能頂住刺骨的風。",
+      "affixes": [
+        "thick",
+        "thick"
+      ],
+      "def": 8
+    },
+    {
+      "id": "ar_bone_loop",
+      "name": "縛骨指環",
+      "slot": "ring",
+      "mdef": 4,
+      "weight": 0,
+      "price": 450,
+      "tier": 5,
+      "desc": "套上時略緊，再拉便會咬住指骨。",
+      "curse": "bound",
+      "def": 3
+    }
+  ],
+  "consumables": [
+    {
+      "id": "supplies",
+      "name": "補給",
+      "price": 40,
+      "limit": 12,
+      "desc": "紮營時分食，稍能回復體力與施法。",
+      "field": "supplies"
+    },
+    {
+      "id": "torches",
+      "name": "火把",
+      "price": 25,
+      "limit": 5,
+      "desc": "點燃後照亮石道一段路。",
+      "field": "torches"
+    },
+    {
+      "id": "potion_small",
+      "name": "微光藥水",
+      "price": 120,
+      "limit": 8,
+      "desc": "喝下後回復少量生命。",
+      "heal": 0.25
+    },
+    {
+      "id": "potion_large",
+      "name": "強效藥水",
+      "price": 400,
+      "limit": 6,
+      "desc": "喝下後回復相當多的生命。",
+      "heal": 0.45
+    },
+    {
+      "id": "potion_great",
+      "name": "極效藥水",
+      "price": 1200,
+      "limit": 4,
+      "desc": "喝下後回復大半生命。",
+      "heal": 0.7
+    },
+    {
+      "id": "potion_holy",
+      "name": "聖潔秘藥",
+      "price": 3500,
+      "limit": 2,
+      "desc": "回滿生命並解除部位傷勢。",
+      "heal": 1,
+      "cure": "all"
+    },
+    {
+      "id": "town_scrolls",
+      "name": "回城卷軸",
+      "price": 250,
+      "limit": 1,
+      "desc": "撕開卷軸回城，遺落半數金幣。",
+      "field": "townScrolls"
+    }
+  ],
+  "uniques": [
+    {
+      "id": "uq_limp_crown",
+      "name": "瘸腿王的銅冠",
+      "slot": "head",
+      "tier": 1,
+      "quality": "unique",
+      "price": 330,
+      "mdef": 2,
+      "special": {
+        "retreatBonus": 0.15,
+        "goldDropMult": 0.8
+      },
+      "desc": "較易撤退，但贏得的金幣減少。",
+      "def": 3
+    },
+    {
+      "id": "uq_broken_fang",
+      "name": "斷牙的打樁鎚",
+      "category": "warhammer",
+      "tier": 4,
+      "range": "medium",
+      "mainStat": "STR",
+      "atk": 22,
+      "acc": 3,
+      "hands": 2,
+      "price": 720,
+      "affixes": [
+        "pierce"
+      ],
+      "desc": "凹入鎚心的牙痕從未磨平。"
+    },
+    {
+      "id": "uq_ember_ward",
+      "name": "餘燼護符",
+      "slot": "neck",
+      "tier": 4,
+      "price": 580,
+      "mdef": 7,
+      "special": {
+        "immunity": [
+          "cold",
+          "fear"
+        ]
+      },
+      "desc": "免疫恐懼與寒冷，摸起來像將熄的火。"
+    }
+  ],
+  "relics": [
+    {
+      "id": "rel_limp_spoon",
+      "name": "焦黑木湯匙",
+      "desc": "前人留下的木湯匙，背面刻著名字。"
+    },
+    {
+      "id": "rel_orc_plate",
+      "name": "斷牙的鐵面",
+      "desc": "鐵板背側仍有打過鉚釘的痕跡。"
+    },
+    {
+      "id": "rel_charred_bowl",
+      "name": "焦黑的小木碗",
+      "desc": "碗沿有一圈指印，像曾被捧到火前。"
+    },
+    {
+      "id": "trial_badge",
+      "name": "試煉徽記",
+      "desc": "帶去修練場，足以證明你走過營寨。"
+    }
+  ],
+  "affixes": [
+    {
+      "id": "thick",
+      "name": "厚實",
+      "desc": "使承受的傷害略為降低。"
+    },
+    {
+      "id": "focus",
+      "name": "聚念",
+      "desc": "凝聚施術者的法力。"
+    },
+    {
+      "id": "keen",
+      "name": "銳利",
+      "desc": "較易命中要害。"
+    },
+    {
+      "id": "pierce",
+      "name": "穿甲",
+      "desc": "擊中時能穿透部分防護。"
+    }
+  ]
+}

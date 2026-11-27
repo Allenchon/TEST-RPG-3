@@ -1,0 +1,900 @@
+{
+  "monsters": [
+    {
+      "id": "mon_goblin_peon",
+      "floor": 1,
+      "name": "哥布林苦工",
+      "appearance": "滿手石粉的苦工，把斷鎬磨成了長刃。",
+      "hp": 89,
+      "patk": 48,
+      "matk": 48,
+      "pdef": 6,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 18,
+      "weakness": [
+        "fire"
+      ],
+      "resistance": [],
+      "xp": 26,
+      "gold": 14,
+      "skills": [
+        {
+          "id": "pick",
+          "name": "斷鎬",
+          "mult": 1.03,
+          "target": "front_single"
+        }
+      ],
+      "drop": "ar_gloves",
+      "art": "goblin"
+    },
+    {
+      "id": "mon_goblin_archer",
+      "floor": 1,
+      "name": "巢穴弓手",
+      "appearance": "弓弦用獸筋反覆搓成，箭上沾著灰。",
+      "hp": 63,
+      "patk": 44,
+      "matk": 44,
+      "pdef": 4,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 24,
+      "weakness": [],
+      "resistance": [],
+      "xp": 26,
+      "gold": 14,
+      "skills": [
+        {
+          "id": "arrow",
+          "name": "灰羽箭",
+          "mult": 1,
+          "target": "random"
+        }
+      ],
+      "row": "back",
+      "drop": "wp_hunter_bow",
+      "art": "archer"
+    },
+    {
+      "id": "mon_goblin_shaman",
+      "floor": 1,
+      "name": "煤灰祭師",
+      "appearance": "在灰燼中撥弄指骨，用斷續呼聲喚起冷火。",
+      "hp": 72,
+      "patk": 43,
+      "matk": 43,
+      "pdef": 4,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 17,
+      "weakness": [
+        "holy"
+      ],
+      "resistance": [],
+      "xp": 26,
+      "gold": 14,
+      "skills": [
+        {
+          "id": "hex",
+          "name": "煤灰咒",
+          "mult": 1.02,
+          "target": "random",
+          "element": "cold",
+          "status": "blind",
+          "chance": 0.55
+        },
+        {
+          "id": "whisper",
+          "name": "低吟",
+          "mult": 0.76,
+          "target": "front_all",
+          "element": "cold"
+        }
+      ],
+      "row": "back",
+      "drop": "ar_bead",
+      "art": "shaman"
+    },
+    {
+      "id": "mon_rust_guard",
+      "floor": 1,
+      "name": "鏽甲守衛",
+      "appearance": "鏽片間還留著舊隊徽，頭盔裡的眼睛從未闔上。",
+      "hp": 106,
+      "patk": 58,
+      "matk": 58,
+      "pdef": 10,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 12,
+      "weakness": [],
+      "resistance": [
+        "fire"
+      ],
+      "xp": 26,
+      "gold": 14,
+      "skills": [
+        {
+          "id": "rust",
+          "name": "鏽鐵劈斬",
+          "mult": 1.12,
+          "target": "front_single",
+          "status": "armor_break",
+          "chance": 0.45
+        }
+      ],
+      "drop": "ar_iron_shield",
+      "art": "guard"
+    },
+    {
+      "id": "mon_cave_rat",
+      "floor": 1,
+      "name": "石窟鼠",
+      "appearance": "齧齒一刻也沒停，牠在石板上留下細細的白痕。",
+      "hp": 53,
+      "patk": 33,
+      "matk": 33,
+      "pdef": 3,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 25,
+      "weakness": [
+        "fire"
+      ],
+      "resistance": [],
+      "xp": 26,
+      "gold": 14,
+      "skills": [
+        {
+          "id": "rat",
+          "name": "啃咬",
+          "mult": 0.96,
+          "target": "front_single",
+          "status": "poison",
+          "chance": 0.4
+        }
+      ],
+      "drop": "ar_boots",
+      "art": "rat"
+    },
+    {
+      "id": "mon_limp_overseer",
+      "floor": 1,
+      "name": "跛腳監工",
+      "appearance": "鐵扣繫著瘸腿，牠會把停下的苦工拖進石縫。",
+      "hp": 111,
+      "patk": 55,
+      "matk": 55,
+      "pdef": 7,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 15,
+      "weakness": [],
+      "resistance": [],
+      "xp": 26,
+      "gold": 14,
+      "skills": [
+        {
+          "id": "brand",
+          "name": "鐵扣抽打",
+          "mult": 1.1,
+          "target": "front_single",
+          "status": "bleed",
+          "chance": 0.45
+        }
+      ],
+      "drop": "wp_pike",
+      "art": "goblin"
+    },
+    {
+      "id": "mon_orc_raider",
+      "floor": 2,
+      "name": "獸人劫掠者",
+      "appearance": "腰帶上夾著多把空鞘，從不替死人取回武器。",
+      "hp": 105,
+      "patk": 51,
+      "matk": 51,
+      "pdef": 10,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 18,
+      "weakness": [],
+      "resistance": [],
+      "xp": 43,
+      "gold": 23,
+      "skills": [
+        {
+          "id": "raider",
+          "name": "獵斧",
+          "mult": 1.1,
+          "target": "front_single",
+          "status": "bleed",
+          "chance": 0.4
+        }
+      ],
+      "drop": "wp_quarry_sword",
+      "art": "orc"
+    },
+    {
+      "id": "mon_orc_pikeman",
+      "floor": 2,
+      "name": "營寨槍兵",
+      "appearance": "把門閂削尖後當槍用，仍守著早已倒下的門。",
+      "hp": 99,
+      "patk": 48,
+      "matk": 48,
+      "pdef": 8,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 20,
+      "weakness": [],
+      "resistance": [],
+      "xp": 43,
+      "gold": 23,
+      "skills": [
+        {
+          "id": "poke",
+          "name": "營槍",
+          "mult": 1.1,
+          "target": "random"
+        }
+      ],
+      "drop": "wp_pike",
+      "art": "guard"
+    },
+    {
+      "id": "mon_warg",
+      "floor": 2,
+      "name": "啖骨獒",
+      "appearance": "齒間的碎骨比木柴還乾，靠近時會喀喀響。",
+      "hp": 67,
+      "patk": 42,
+      "matk": 42,
+      "pdef": 6,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 28,
+      "weakness": [
+        "fire"
+      ],
+      "resistance": [],
+      "xp": 43,
+      "gold": 23,
+      "skills": [
+        {
+          "id": "maul",
+          "name": "齧咬",
+          "mult": 1.02,
+          "target": "front_single",
+          "status": "bleed",
+          "chance": 0.45
+        }
+      ],
+      "drop": "ar_gloves",
+      "art": "rat"
+    },
+    {
+      "id": "mon_orc_drummer",
+      "floor": 2,
+      "name": "戰鼓手",
+      "appearance": "鼓背藏著乾涸的掌印，擊鼓時只用左手。",
+      "hp": 82,
+      "patk": 40,
+      "matk": 40,
+      "pdef": 9,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 16,
+      "weakness": [],
+      "resistance": [],
+      "xp": 43,
+      "gold": 23,
+      "skills": [
+        {
+          "id": "drum",
+          "name": "鼓鳴",
+          "mult": 0,
+          "target": "buff",
+          "boost": 0.18
+        },
+        {
+          "id": "clapper",
+          "name": "鼓槌",
+          "mult": 1.08,
+          "target": "front_single"
+        }
+      ],
+      "row": "back",
+      "drop": "ar_chain",
+      "art": "orc"
+    },
+    {
+      "id": "mon_orc_hexer",
+      "floor": 2,
+      "name": "燼紋咒者",
+      "appearance": "胸前烙著火紋，舊疤在石牆映出半圈紅光。",
+      "hp": 79,
+      "patk": 45,
+      "matk": 45,
+      "pdef": 6,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 19,
+      "weakness": [
+        "cold"
+      ],
+      "resistance": [],
+      "xp": 43,
+      "gold": 23,
+      "skills": [
+        {
+          "id": "mark",
+          "name": "燼紋",
+          "mult": 0.99,
+          "target": "random",
+          "element": "fire",
+          "status": "silence",
+          "chance": 0.55
+        },
+        {
+          "id": "ash",
+          "name": "灰線",
+          "mult": 0.65,
+          "target": "front_all",
+          "element": "fire"
+        }
+      ],
+      "row": "back",
+      "drop": "wp_votive",
+      "art": "shaman"
+    },
+    {
+      "id": "mon_orc_iron",
+      "floor": 2,
+      "name": "鐵皮哨衛",
+      "appearance": "整張鐵皮從肩掛到腰，牽動時像厚重的門。",
+      "hp": 122,
+      "patk": 55,
+      "matk": 55,
+      "pdef": 13,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 12,
+      "weakness": [],
+      "resistance": [],
+      "xp": 43,
+      "gold": 23,
+      "skills": [
+        {
+          "id": "iron_snap",
+          "name": "鐵肩掃擊",
+          "mult": 0.81,
+          "target": "front_all"
+        }
+      ],
+      "drop": "ar_chain",
+      "art": "guard"
+    }
+  ],
+  "elites": [
+    {
+      "id": "eli_bone_flute",
+      "floor": 1,
+      "name": "吹骨笛者",
+      "appearance": "骨笛的孔被磨得發亮，吹出的聲音像是有人屏息。",
+      "hp": 81,
+      "patk": 45,
+      "matk": 45,
+      "pdef": 6,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 20,
+      "weakness": [],
+      "resistance": [],
+      "xp": 85,
+      "gold": 46,
+      "skills": [
+        {
+          "id": "flute",
+          "name": "骨笛哀音",
+          "mult": 1.02,
+          "target": "front_all",
+          "element": "cold",
+          "status": "fear",
+          "chance": 0.4
+        },
+        {
+          "id": "flute_bone",
+          "name": "骨杖",
+          "mult": 1.2,
+          "target": "front_single"
+        }
+      ],
+      "drop": "ar_iron_shield",
+      "art": "shaman"
+    },
+    {
+      "id": "eli_cave_stalker",
+      "floor": 1,
+      "name": "穴影獵手",
+      "appearance": "藏身在鐘乳石後，總先聽人的腳步再出手。",
+      "hp": 82,
+      "patk": 53,
+      "matk": 53,
+      "pdef": 7,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 24,
+      "weakness": [],
+      "resistance": [],
+      "xp": 80,
+      "gold": 43,
+      "skills": [
+        {
+          "id": "stalker",
+          "name": "暗爪",
+          "mult": 1.2,
+          "target": "front_single",
+          "status": "bleed",
+          "chance": 0.8
+        },
+        {
+          "id": "stalker_pounce",
+          "name": "撲擊",
+          "mult": 1.15,
+          "target": "random"
+        }
+      ],
+      "drop": "wp_pike",
+      "art": "goblin"
+    },
+    {
+      "id": "eli_torch_thief",
+      "floor": 1,
+      "name": "竊火者",
+      "appearance": "一手提破燈，一手只需伸向獵物身後的火把。",
+      "hp": 76,
+      "patk": 45,
+      "matk": 45,
+      "pdef": 6,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 27,
+      "weakness": [],
+      "resistance": [],
+      "xp": 81,
+      "gold": 44,
+      "skills": [
+        {
+          "id": "steal_flame",
+          "name": "奪火",
+          "mult": 0.99,
+          "target": "random",
+          "status": "blind",
+          "chance": 0.75
+        },
+        {
+          "id": "lamp",
+          "name": "殘燈",
+          "mult": 1.04,
+          "target": "front_all",
+          "element": "fire"
+        }
+      ],
+      "drop": "ar_bead",
+      "art": "archer"
+    },
+    {
+      "id": "eli_iron_jaw",
+      "floor": 1,
+      "name": "鐵顎",
+      "appearance": "鐵片箍住殘下巴，呼吸時鐵碰著牙。",
+      "hp": 89,
+      "patk": 58,
+      "matk": 58,
+      "pdef": 12,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 14,
+      "weakness": [],
+      "resistance": [],
+      "xp": 95,
+      "gold": 49,
+      "skills": [
+        {
+          "id": "maul",
+          "name": "鐵顎猛撞",
+          "mult": 1.21,
+          "target": "front_single",
+          "status": "armor_break",
+          "chance": 0.75
+        },
+        {
+          "id": "floor_hit",
+          "name": "橫斷",
+          "mult": 0.77,
+          "target": "front_all"
+        }
+      ],
+      "drop": "ar_chain",
+      "art": "guard"
+    },
+    {
+      "id": "eli_camp_reaver",
+      "floor": 2,
+      "name": "翻寨者",
+      "appearance": "從帳篷後丟出舊盔，自己早從另一側繞來。",
+      "hp": 106,
+      "patk": 56,
+      "matk": 56,
+      "pdef": 10,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 23,
+      "weakness": [],
+      "resistance": [],
+      "xp": 136,
+      "gold": 94,
+      "skills": [
+        {
+          "id": "rush",
+          "name": "翻寨斬",
+          "mult": 1.23,
+          "target": "random"
+        },
+        {
+          "id": "split",
+          "name": "裂皮",
+          "mult": 1.14,
+          "target": "front_single",
+          "status": "bleed"
+        }
+      ],
+      "drop": "wp_road_crossbow",
+      "art": "orc"
+    },
+    {
+      "id": "eli_bone_brander",
+      "floor": 2,
+      "name": "烙骨巫",
+      "appearance": "用紅炭烙下指印，死者的骨頭也要留下記號。",
+      "hp": 97,
+      "patk": 48,
+      "matk": 48,
+      "pdef": 8,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 20,
+      "weakness": [],
+      "resistance": [],
+      "xp": 132,
+      "gold": 94,
+      "skills": [
+        {
+          "id": "brand",
+          "name": "烙痕",
+          "mult": 1.01,
+          "target": "all",
+          "element": "fire"
+        },
+        {
+          "id": "bone",
+          "name": "骨燼咒",
+          "mult": 1.09,
+          "target": "random",
+          "element": "fire",
+          "status": "fear",
+          "chance": 0.6
+        }
+      ],
+      "drop": "wp_cinder_staff",
+      "art": "shaman"
+    },
+    {
+      "id": "eli_orc_warden",
+      "floor": 2,
+      "name": "鐵門督軍",
+      "appearance": "帶甲睡在鐵門邊，連斷掉的門軸也穿在身上。",
+      "hp": 119,
+      "patk": 64,
+      "matk": 64,
+      "pdef": 14,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 14,
+      "weakness": [],
+      "resistance": [],
+      "xp": 145,
+      "gold": 112,
+      "skills": [
+        {
+          "id": "warden",
+          "name": "門軸橫擊",
+          "mult": 1,
+          "target": "front_all",
+          "status": "armor_break",
+          "chance": 0.5
+        },
+        {
+          "id": "crush",
+          "name": "鐵門重落",
+          "mult": 1.19,
+          "target": "front_single"
+        }
+      ],
+      "drop": "ar_watch_coat",
+      "art": "guard"
+    },
+    {
+      "id": "eli_gray_fangs",
+      "floor": 2,
+      "name": "灰牙頭犬",
+      "appearance": "脖上鬆垂著斷鍊，身後的洞口堆了幾副腳骨。",
+      "hp": 100,
+      "patk": 56,
+      "matk": 56,
+      "pdef": 8,
+      "mdef": 5,
+      "acc": 91,
+      "eva": 9,
+      "spd": 29,
+      "weakness": [],
+      "resistance": [],
+      "xp": 137,
+      "gold": 97,
+      "skills": [
+        {
+          "id": "gray_fangs",
+          "name": "撕扯",
+          "mult": 1.19,
+          "target": "random",
+          "status": "bleed",
+          "chance": 0.75
+        },
+        {
+          "id": "howl",
+          "name": "低吼",
+          "mult": 0.8,
+          "target": "front_all",
+          "status": "fear",
+          "chance": 0.4
+        }
+      ],
+      "drop": "wp_yew_bow",
+      "art": "rat"
+    }
+  ],
+  "bosses": [
+    {
+      "id": "boss_1_grik",
+      "floor": 1,
+      "name": "瘸腿王 葛里克",
+      "appearance": "拖著枯萎左腿、腰間拴著半截焦黑木湯匙的獨眼老哥布林。",
+      "hp": 260,
+      "patk": 18,
+      "matk": 6,
+      "pdef": 7,
+      "mdef": 4,
+      "acc": 92,
+      "eva": 8,
+      "spd": 12,
+      "weakness": [
+        "fire"
+      ],
+      "resistance": [
+        "poison"
+      ],
+      "xp": 210,
+      "gold": 170,
+      "skills": [
+        {
+          "id": "b1_chop",
+          "name": "生鏽柴刀",
+          "mult": 1,
+          "target": "front_single"
+        },
+        {
+          "id": "b1_lime",
+          "name": "撒石灰",
+          "mult": 0.4,
+          "target": "front_all",
+          "status": "blind",
+          "duration": 2
+        }
+      ],
+      "art": "grik",
+      "chargeSkill": {
+        "telegraph": "葛里克用斷腿抵住石縫，雙手將缺口巨斧舉過頭頂。",
+        "id": "b1_charge",
+        "name": "裂地重劈",
+        "mult": 1.65,
+        "target": "all",
+        "inflictInjury": "arm"
+      },
+      "phase2Skills": [
+        {
+          "id": "b1_frenzy",
+          "name": "瘋狂亂砍",
+          "mult": 0.65,
+          "target": "random",
+          "hits": 3
+        },
+        {
+          "id": "b1_steal",
+          "name": "摸錢",
+          "mult": 0.5,
+          "target": "front_single",
+          "stealGoldPct": 0.25
+        }
+      ],
+      "dropUnique": "uq_limp_crown",
+      "relic": "rel_limp_spoon",
+      "lore": "曾是挑夫，斷腿後被棄在巢穴。木匙是當時唯一分到的餐具。",
+      "baseHp": 52
+    },
+    {
+      "id": "boss_2_mogrash",
+      "floor": 2,
+      "name": "斷牙 莫格拉什",
+      "appearance": "左臉嵌著鏽鐵板，嘴角斷裂獠牙滲著黑血的獨臂獸人。",
+      "hp": 495,
+      "patk": 37,
+      "matk": 12,
+      "pdef": 15,
+      "mdef": 12,
+      "acc": 94,
+      "eva": 9,
+      "spd": 17,
+      "weakness": [
+        "cold"
+      ],
+      "resistance": [
+        "fire"
+      ],
+      "xp": 460,
+      "gold": 340,
+      "skills": [
+        {
+          "id": "b2_crush",
+          "name": "碎骨重錘",
+          "mult": 1.13,
+          "target": "front_single",
+          "status": "armor_break",
+          "duration": 3
+        },
+        {
+          "id": "b2_drum",
+          "name": "戰鼓咆哮",
+          "mult": 0,
+          "target": "buff",
+          "boost": 0.22
+        }
+      ],
+      "art": "mogrash",
+      "chargeSkill": {
+        "telegraph": "莫格拉什低頭用鐵板護住咽喉，沉重戰靴在石板上刨出火星。",
+        "id": "b2_charge",
+        "name": "撞陣重壓",
+        "mult": 1.65,
+        "target": "front_all",
+        "inflictInjury": "torso"
+      },
+      "phase2Skills": [
+        {
+          "id": "b2_fury",
+          "name": "血怒連擊",
+          "mult": 0.92,
+          "target": "weakest",
+          "hits": 2
+        },
+        {
+          "id": "b2_execute",
+          "name": "處決重壓",
+          "mult": 1.2,
+          "target": "injured",
+          "injuryMult": 1.55
+        }
+      ],
+      "dropUnique": "uq_broken_fang",
+      "relic": "rel_orc_plate",
+      "badge": "trial_badge",
+      "lore": "他咬死前任首領，把對方的護心鐵板釘在臉上，蓋住潰傷。",
+      "baseHp": 99
+    }
+  ],
+  "hiddenBosses": [
+    {
+      "id": "hb_1_fire_child",
+      "floor": 1,
+      "name": "繞火的孩子",
+      "appearance": "半透明男童抱膝坐在灰燼裡，視線一直追著火。",
+      "hp": 430,
+      "patk": 26,
+      "matk": 34,
+      "pdef": 12,
+      "mdef": 16,
+      "acc": 95,
+      "eva": 10,
+      "spd": 24,
+      "weakness": [
+        "cold"
+      ],
+      "resistance": [
+        "fire"
+      ],
+      "xp": 400,
+      "gold": 235,
+      "skills": [
+        {
+          "id": "hb_ash",
+          "name": "捻灰",
+          "mult": 0.92,
+          "target": "all",
+          "element": "fire"
+        },
+        {
+          "id": "hb_shiver",
+          "name": "火塘餘息",
+          "mult": 1.03,
+          "target": "random",
+          "element": "cold",
+          "status": "fear",
+          "chance": 0.65
+        }
+      ],
+      "art": "child",
+      "chargeSkill": {
+        "telegraph": "孩子捧起木碗，沒了火的火塘透出紅光。",
+        "id": "hb_charge",
+        "name": "餘火翻湧",
+        "mult": 1.58,
+        "target": "all",
+        "element": "fire"
+      },
+      "phase2Skills": [
+        {
+          "id": "hb_wail",
+          "name": "童聲",
+          "mult": 0.74,
+          "target": "all",
+          "element": "cold",
+          "status": "fear",
+          "chance": 0.7
+        },
+        {
+          "id": "hb_coal",
+          "name": "拾炭",
+          "mult": 1.16,
+          "target": "weakest",
+          "element": "fire",
+          "hits": 2
+        }
+      ],
+      "dropUnique": "uq_ember_ward",
+      "counterBurn": true,
+      "lore": "火熄之後仍抱膝等待。他伸手拿的，始終只是那只小碗。",
+      "baseHp": 86
+    }
+  ]
+}

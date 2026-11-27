@@ -1,0 +1,97 @@
+{
+  "partySize": 5,
+  "frontSlots": 3,
+  "difficultyMult": {
+    "standard": 1.0,
+    "ruthless": 1.3
+  },
+  "dmgVariance": [
+    0.85,
+    1.15
+  ],
+  "hazardPerStep": [
+    4,
+    7
+  ],
+  "hazardThreshold": 100,
+  "torchSteps": 80,
+  "campHealPct": 0.35,
+  "campAmbushChance": 0.25,
+  "eliteHpMult": 2.7,
+  "bossHpMult": 5.0,
+  "bossPoisePct": 0.12,
+  "bossPhase2DmgMult": 1.2,
+  "stallStartTurn": 20,
+  "stallDmgPctPerTurn": 0.05,
+  "soulScarHpPen": 0.05,
+  "soulScarMax": 5,
+  "carryLimits": {
+    "supplies": 12,
+    "torches": 5,
+    "townScrolls": 1,
+    "bag": 24
+  },
+  "innPrice": 30,
+  "injuryTreatment": 75,
+  "curseRemoval": 100,
+  "trapNotice": 0.5,
+  "trapDisarm": 0.55,
+  "darkRounds": 3,
+  "darkAccPenalty": 25,
+  "encounters": {
+    "1": {
+      "normal": [
+        [
+          "mon_cave_rat",
+          "mon_goblin_peon",
+          "mon_goblin_archer"
+        ],
+        [
+          "mon_goblin_peon",
+          "mon_rust_guard",
+          "mon_goblin_shaman"
+        ],
+        [
+          "mon_limp_overseer",
+          "mon_goblin_peon",
+          "mon_goblin_archer",
+          "mon_cave_rat"
+        ]
+      ],
+      "eliteSupport": [
+        "mon_goblin_archer",
+        "mon_cave_rat"
+      ],
+      "bossSupport": [
+        "mon_limp_overseer",
+        "mon_goblin_archer"
+      ]
+    },
+    "2": {
+      "normal": [
+        [
+          "mon_orc_raider",
+          "mon_orc_pikeman",
+          "mon_warg"
+        ],
+        [
+          "mon_orc_raider",
+          "mon_orc_drummer",
+          "mon_orc_hexer"
+        ],
+        [
+          "mon_orc_pikeman",
+          "mon_orc_iron",
+          "mon_orc_hexer"
+        ]
+      ],
+      "eliteSupport": [
+        "mon_orc_pikeman",
+        "mon_orc_hexer"
+      ],
+      "bossSupport": [
+        "mon_orc_drummer"
+      ]
+    }
+  }
+}
